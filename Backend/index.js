@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000
 //middlewares
 app.use(express.json());
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: process.env.FRONTEND_URL || "https://egovwebsiteandchatbot-9hh1.vercel.app/",
     credentials: true
 }))
 
