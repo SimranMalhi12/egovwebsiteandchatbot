@@ -13,20 +13,38 @@ app.use(cors({
     origin: function (origin, callback) {
         // Allow requests with no origin (like mobile apps or curl requests)
         if (!origin) return callback(null, true);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6dffb79 (adding frontend)
         // Allow localhost (development)
         if (origin.includes("localhost")) {
             return callback(null, true);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6dffb79 (adding frontend)
         // Allow all Vercel deployments (preview + production)
         if (origin.includes("vercel.app")) {
             return callback(null, true);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6dffb79 (adding frontend)
         // Block everything else
         return callback(new Error("Not allowed by CORS"));
     },
     credentials: true
 }));
+<<<<<<< HEAD
 app.use(express.json());
+=======
+
+app.use(express.json());
+
+>>>>>>> 6dffb79 (adding frontend)
 // Routes
 app.use('/api/auth', authRoutes); //Register && login
 app.use("/api/chats", chatHistoryRoutes);  //chat history
